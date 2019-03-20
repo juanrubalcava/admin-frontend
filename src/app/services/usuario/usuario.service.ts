@@ -23,7 +23,7 @@ export class UsuarioService {
   }
 
   estaLogueado() {
-    return (this.token.length > 5) ? true : false;
+    return (this.token && this.token.length > 5) ? true : false;
   }
 
   cargarStorage() {
