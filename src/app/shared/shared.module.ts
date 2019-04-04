@@ -9,6 +9,9 @@ import { CommonModule } from '@angular/common';
 
 // Pipes
 import { PipesModule } from '../pipes/pipes.module';
+import { NoWhitespacesDirective } from './directives/no-whitespaces.directive';
+import { FormControlMessageComponent } from './form-control-message/form-control-message.component';
+import { InputMessageComponent } from './input-message/input-message.component';
 
 
 
@@ -22,13 +25,19 @@ import { PipesModule } from '../pipes/pipes.module';
         HeaderComponent,
         SidebarComponent,
         BreadcrumsComponent,
-        NopagefoundComponent
+        NopagefoundComponent,
+        FormControlMessageComponent,
+        InputMessageComponent,
+        NoWhitespacesDirective
     ],
     exports: [
         HeaderComponent,
         SidebarComponent,
         BreadcrumsComponent,
-        NopagefoundComponent
+        NopagefoundComponent,
+        FormControlMessageComponent,
+        InputMessageComponent,
+        NoWhitespacesDirective
     ]
 
 })

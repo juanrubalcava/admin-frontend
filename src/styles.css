@@ -1,3 +1,5 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
 #themecolors a {
     cursor: pointer;
 }
@@ -8,4 +10,8 @@
 
 .w150 {
     width: 150px;
+}
+
+.row-hover:hover {
+    background: #edf0f5;
 }

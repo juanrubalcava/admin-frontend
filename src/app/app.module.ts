@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 // Rutas
 import { APP_ROUTES } from './app.routes';
@@ -29,6 +30,7 @@ import { ServiceModule } from './services/service.module';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     APP_ROUTES,
     PageModule,
     FormsModule,

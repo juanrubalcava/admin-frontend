@@ -1,0 +1,33 @@
+.form-control-error-msg {
+  display: inline;
+}
+
+.form-control-error-msg i {
+  margin-left: 5px;
+}
+
+.form-control-error-msg .invalid-message {
+  font-family: 'Roboto', sans-serif;
+  font-weight: lighter;
+  font-style: italic;
+  font-size: 12px;
+  bottom: -20px;
+  right: 20px;
+  width: 100%;
+  text-align: right;
+}
+
+.error,
+.error i {
+  color: #dc3545;
+}
+
+.warning,
+.warning i {
+  color: orange;
+}
+
+.success,
+.success i {
+  color: #28a745;
+}

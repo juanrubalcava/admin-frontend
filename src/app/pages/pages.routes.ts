@@ -23,6 +23,7 @@ const pageRoutes: Routes = [
         {path: 'rxjs', component: RxjsComponent, data: { titulo: 'RxJs' } },
         {path: 'account-settings', component: AccountSettingsComponent, data: { titulo: 'Ajustes del Tema' } },
         {path: 'perfil', component: ProfileComponent, data: { titulo: 'Perfil De usuario' } },
+        {path: 'empresas', loadChildren: './empresas/empresas.module#EmpresasModule' },
         {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
 
     ]
