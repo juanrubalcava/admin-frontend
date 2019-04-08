@@ -1,10 +1,10 @@
 import { Component, OnInit, OnDestroy, ViewChild } from '@angular/core';
 import { MatPaginator, MatTableDataSource, MatSort } from '@angular/material';
+import { Router } from '@angular/router';
 import { Subscription } from 'rxjs';
 
 import { EmpresaService } from '../../../services/empresa/empresa.service';
 import { Empresa } from '../../../models/empresa.model';
-import { e } from '@angular/core/src/render3';
 
 type DataTableAction = 'created' | 'updated' | 'deleted' | 'cancel';
 
@@ -20,8 +20,6 @@ export class EmpresasComponent implements OnInit, OnDestroy {
   dataSource = new MatTableDataSource<Empresa>();
   pageSizeOptions: number[] = [10, 25, 50];
 
-  // @ViewChild(MatSort, { static: true }) sort: MatSort;
-  // @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
   @ViewChild(MatSort) sort: MatSort;
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
@@ -30,7 +28,8 @@ export class EmpresasComponent implements OnInit, OnDestroy {
   imgPath: string;
 
   constructor(
-    private empresaService: EmpresaService
+    private empresaService: EmpresaService,
+    private router: Router
   ) { }
 
   ngOnInit() {
@@ -57,9 +56,7 @@ export class EmpresasComponent implements OnInit, OnDestroy {
   }
 
   rowClick(empresa: Empresa) {
-    console.log('rowClick', empresa);
-    // this.formEmpresa = empresa;
-    // this.showForm = true;
+    this.router.navigate(['empresas', empresa._id, 'alumnos']);
   }
 
   edit(empresa: Empresa) {

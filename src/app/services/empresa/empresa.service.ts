@@ -18,6 +18,10 @@ export class EmpresaService {
     return this.restService.get('empresas');
   }
 
+  getEmpresa(id: string): Observable<{}> {
+    return this.restService.get(`empresas/${id}`);
+  }
+
   postEmpresa(data: Empresa): Observable<any> {
     return this.restService.post('empresas/', data);
   }

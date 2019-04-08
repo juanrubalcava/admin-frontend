@@ -12,6 +12,7 @@ import { EmpresasComponent } from './empresas/empresas.component';
 
 import { CustomPaginatorConfig } from './custom-paginator-config';
 import { FormEmpresaComponent } from './form-empresa/form-empresa.component';
+import { FormAlumnoComponent } from './form-alumno/form-alumno.component';
 
 @NgModule({
   imports: [
@@ -26,7 +27,8 @@ import { FormEmpresaComponent } from './form-empresa/form-empresa.component';
   declarations: [
     AlumnosComponent,
     EmpresasComponent,
-    FormEmpresaComponent
+    FormEmpresaComponent,
+    FormAlumnoComponent
   ],
   providers: [
     { provide: MatPaginatorIntl, useValue: CustomPaginatorConfig() }

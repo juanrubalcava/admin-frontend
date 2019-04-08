@@ -1,0 +1,25 @@
+<h3>{{ (alumno && alumno._id) ? 'Editar' : 'Crear' }} alumno</h3>
+
+<form [formGroup]="formData">
+
+  <div class="form-group">
+    <label for="nombre">Nombre</label>
+    <input type="text" class="form-control" id="nombre" placeholder="Nombre" formControlName="nombre" appNoWhiteSpaces>
+    <app-form-control-message [control]="formData.controls.nombre"></app-form-control-message>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="email" class="form-control" id="email" placeholder="Email" formControlName="email">
+    <app-form-control-message [control]="formData.controls.email"></app-form-control-message>
+  </div>
+
+  <div class="form-group">
+    <label for="telefono">Teléfono</label>
+    <input type="text" class="form-control" id="telefono" placeholder="Telefono" formControlName="telefono">
+    <app-form-control-message [control]="formData.controls.telefono"></app-form-control-message>
+  </div>
+
+  <button type="button" class="btn btn-success waves-effect waves-light m-r-10" (click)="save()">Guardar</button>
+  <button type="button" class="btn btn-inverse waves-effect waves-light" (click)="cancel()">Cancelar</button>
+</form>
