@@ -25,6 +25,8 @@ import { ProfileComponent } from './profile/profile.component';
 
 // Common Module
 import { CommonModule } from '@angular/common';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { PasResetComponent } from './usuarios/pas-reset.component';
 
 
 
@@ -39,7 +41,10 @@ import { CommonModule } from '@angular/common';
         GraficoDonaComponent,
         AccountSettingsComponent,
         PromesasComponent,
-        ProfileComponent
+        ProfileComponent,
+        UsuariosComponent,
+        PasResetComponent
+
     ],
     exports: [
         DashboardComponent,

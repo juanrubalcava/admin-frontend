@@ -9,6 +9,13 @@ import { PromesasComponent } from './promesas/promesas.component';
 import { RxjsComponent } from './rxjs/rxjs.component';
 import { LoginGuardGuard } from '../services/guards/login-guard.guard';
 import { ProfileComponent } from './profile/profile.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { UsuarioComponent } from './usuarios/usuario.component';
+import { PasResetComponent } from './usuarios/pas-reset.component';
+
+
+// Mantenimientos
+
 
 
 const pageRoutes: Routes = [
@@ -23,6 +30,10 @@ const pageRoutes: Routes = [
         {path: 'rxjs', component: RxjsComponent, data: { titulo: 'RxJs' } },
         {path: 'account-settings', component: AccountSettingsComponent, data: { titulo: 'Ajustes del Tema' } },
         {path: 'perfil', component: ProfileComponent, data: { titulo: 'Perfil De usuario' } },
+        // Mantenimientos
+        {path: 'usuarios', component: UsuariosComponent, data: { titulo: 'Mantenimiento de Usuarios' } },
+        {path: 'usuario/:id', component: UsuarioComponent, data: { titulo: 'Crear/Actualizar Nuevo Usuario' } },
+        {path: 'contra/:id', component: PasResetComponent, data: { titulo: 'Resetear password' } },
         {path: '', redirectTo: '/dashboard', pathMatch: 'full'},
 
     ]
