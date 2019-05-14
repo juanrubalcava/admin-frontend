@@ -18,6 +18,7 @@ import { RxjsComponent } from './pages/rxjs/rxjs.component';
 
 // servicios
 import { ServiceModule } from './services/service.module';
+import { UsuarioComponent } from './pages/usuarios/usuario.component';
 
 
 
@@ -27,6 +28,7 @@ import { ServiceModule } from './services/service.module';
     LoginComponent,
     RegisterComponent,
     RxjsComponent,
+    UsuarioComponent,
   ],
   imports: [
     BrowserModule,

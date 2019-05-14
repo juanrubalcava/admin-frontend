@@ -15,3 +15,11 @@
 .row-hover:hover {
     background: #edf0f5;
 }
+
+.img-50 {
+    width: 50px;
+}
+
+.w-70 {
+    width: 70px;
+}

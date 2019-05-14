@@ -49,9 +49,10 @@ export class ProfileComponent implements OnInit {
     this.imagenSubir = archivo;
 
     let reader = new FileReader();
-    let urlImagenTemp = reader.readAsDataURL( archivo );
 
-    reader.onloadend = () => this.imagentemp = reader.result;
+    let urlimagentemp = reader.readAsDataURL( archivo );
+
+    reader.onloadend = () => this.imagentemp = reader.result as string;
   }
   cambiarImagen() {
     this._usuarioService.cambiarImagen( this.imagenSubir, this.usuario._id );
